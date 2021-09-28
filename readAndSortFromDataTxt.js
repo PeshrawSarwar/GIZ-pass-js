@@ -25,3 +25,6 @@ fs.readFile('data.txt', 'UTF-8', (err, data) => {
         console.log(err);
     });
 })
+
+
+// run in the terminal node readAndSortFromDataTxt
