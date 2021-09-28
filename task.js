@@ -8,7 +8,9 @@ let newNumbers = [...numbers];
 let temp = 0;
 let n = newNumbers.length; // the length of the array
 
+// loop until the last number
 for (let i = 0; i < n - 1; i++) {
+    // the j index is always smaller than index i to compare them
     for (let j = 0; j < n - i - 1; j++) {
         //if the index before the other index is greater than then :
         if (newNumbers[j] > newNumbers[j + 1]) {
@@ -27,9 +29,9 @@ for (let i = 0; i < n - 1; i++) {
     for (let j = 0; j < n - i - 1; j++) {
         //if the index before the other index is less than then :
         if (newNumbers[j] < newNumbers[j + 1]) {
-            let temp = newNumbers[j];
-            newNumbers[j] = newNumbers[j + 1];
-            newNumbers[j + 1] = temp;
+            let temp = newNumbers[j]; //insert the smaller index to temp veriable
+            newNumbers[j] = newNumbers[j + 1]; //insert the greater one to the index of the smaller one
+            newNumbers[j + 1] = temp; //insert the smaller one to the index of the greater one
         }
     }
 }
