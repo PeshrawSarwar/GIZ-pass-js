@@ -21,7 +21,7 @@ fs.readFile('data.txt', 'UTF-8', (err, data) => {
 
     console.log("numbers list After sorting: ", numbers)
         //writing the numbers to a file.
-    fs.writeFile('newDatas.txt', JSON.stringify(numbers), err => {
+    fs.writeFile('output.txt', JSON.stringify(numbers), err => {
         console.log(err);
     });
 })
